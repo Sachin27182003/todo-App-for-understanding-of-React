@@ -14,8 +14,8 @@ function todoReducer(state = [], action){
         });
         return updatedList;
     } else if(action.type == 'delete_todo'){
-        let todo = action.payload.todo;
-        const updatedList = state.filter((t) => t.id != todo.id);
+        let todoId = action.payload.todoId;
+        const updatedList = state.filter((t) => t.id != todoId);
         return updatedList;
     } else if (action.type == 'finish_todo'){
         let todo = action.payload.todo;
