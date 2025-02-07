@@ -3,7 +3,8 @@ import './App.css'
 import AddTodo from './Components/AddTodo/AddTodo';
 import TodoList from './Components/TodoList/TodoList';
 import { bindActionCreators } from 'redux';
-import { todoFinished, addTodo, deleteTodo, editTodo} from './Actions/todoActions';
+//import { todoFinished, addTodo, deleteTodo, editTodo} from './Actions/todoActions';
+import todoReducer, { addTodo, editTodo, todoFinished, deleteTodo } from './Slices/todoSlice';
 
 function App() {
 

@@ -9,7 +9,7 @@ function AddTodo({addTodo}){
         <div>
             <input type="text" value={inputText} placeholder="Add your next todo..." onChange={(e) => setInputText(e.target.value)} />
             <button onClick={() => {
-                addTodo(inputText);
+                addTodo({todoText: inputText});
                 setInputText('');
             }}  > Add </button>
         </div>
